@@ -1,7 +1,11 @@
-// Lib
-@import 'lib/lib';
+// Abstracts
+@import 'abstracts/abstracts';
 
 // Base
-@import 'base/mixins';
-@import 'base/config';
 @import 'base/base';
+
+// Components
+@import 'components/components';
+
+// Pages
+@import 'pages/pages';
