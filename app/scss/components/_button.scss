@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  background: #4A4A4A;
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  margin-top: 20px;
+  transition: background ease-out .15s;
+
+  &:hover {
+    background: lighten(#4A4A4A, 20%);
+  }
+}
