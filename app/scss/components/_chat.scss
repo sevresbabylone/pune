@@ -1,0 +1,52 @@
+.chat_container {
+  margin: 15px 0;
+}
+
+.c-right {
+  text-align: right;
+
+  .chat_text {
+    color: $black;
+    background: #e8e8e8;
+  }
+}
+
+.chat_profile {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: $black url(../images/profile.jpg) center no-repeat;
+  background-size: contain;
+}
+
+.chat_text {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-decoration: none;
+  padding: 0 20px;
+  border-radius: 20px;
+  margin: 0 5px;
+  max-width: 80%;
+
+  p {
+    display: inline-block;
+  }
+
+  i.em {
+    height: 1.2em;
+    width: 1.2em;
+  }
+}
+
+.snippet {
+  background: lightgreen;
+  padding: 30px 40px;
+
+  h2 {
+    text-align: center;
+  }
+}
