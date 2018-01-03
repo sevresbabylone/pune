@@ -119,3 +119,15 @@
   }
 }
 
+.container-inner {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+
+  &.is-active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
