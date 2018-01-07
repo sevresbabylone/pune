@@ -11,16 +11,19 @@ body {
   line-height: 1.6;
   font-weight: 400;
   color: $black; 
-  font-family: $sans1;
-  font-weight: 300;
-  letter-spacing: .02rem;
+  font-family: $sans;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 700; 
-  font-family: $sans2;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 { font-size: 4.0rem; line-height: 1.20; }
