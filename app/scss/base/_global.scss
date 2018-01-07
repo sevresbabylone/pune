@@ -9,9 +9,9 @@ html {
 body {
   font-size: 1.5em;
   line-height: 1.6;
+  font-family: $sans1;
   font-weight: 400;
   color: $black; 
-  font-family: $sans;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,6 +20,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
+  font-family: $sans2;
   font-weight: 800;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -34,15 +35,15 @@ h5 { font-size: 1.8rem; line-height: 1.50; }
 h6 { font-size: 1.5rem; line-height: 1.60; }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
-  h1 { font-size: 5.0rem; }
-  h2 { font-size: 4.2rem; }
-  h3 { font-size: 3.6rem; }
-  h4 { font-size: 3.0rem; }
-  h5 { font-size: 2.4rem; }
-  h6 { font-size: 1.5rem; }
-}
+// @media (min-width: 550px) {
+//   h1 { font-size: 5.0rem; }
+//   h2 { font-size: 4.2rem; }
+//   h3 { font-size: 3.6rem; }
+//   h4 { font-size: 3.0rem; }
+//   h5 { font-size: 2.4rem; }
+//   h6 { font-size: 1.5rem; }
+// }
 
-section {
+header, section, footer {
   position: relative;
 }
