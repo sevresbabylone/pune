@@ -71,6 +71,8 @@
 }
 
 .home_map {
+  background: #f6f6f6 url(../images/halftone.png) center;
+
   &:before {
     content: '';
     display: block;
