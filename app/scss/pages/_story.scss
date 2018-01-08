@@ -1,0 +1,45 @@
+.story_header {
+  background: #ccc;
+  padding: 2rem 0 4rem;
+}
+
+.story_profile {
+  position: relative;
+  text-align: center;
+  padding-top: 18rem;
+
+  img {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid white;
+    z-index: 1;
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);
+  }
+
+  .story_profile_text {
+    width: 90%;
+    color: $black;
+    background: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5rem 2rem 3rem;
+    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.05);
+
+    @media (min-width: 800px) {
+      width: 70%;
+    }
+  }
+
+  .button {
+    margin-top: 0;
+  }
+}
+
+.story_convo {
+  background: $black;
+}
