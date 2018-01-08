@@ -43,3 +43,25 @@
 .story_convo {
   background: $black;
 }
+
+.snippet {
+  background: #f6f6f6 url(../images/halftone.png);
+  padding: 3rem 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  .snippet_container {
+    width: 90%;
+    background: white;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);
+
+    @media (min-width: 768px) {
+      width: 65%;
+      padding: 4rem; 
+    }
+  }
+}
