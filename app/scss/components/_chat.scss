@@ -7,7 +7,7 @@
 
   .chat_text {
     color: $black;
-    background: #e8e8e8;
+    background: white;
   }
 }
 
@@ -24,21 +24,37 @@
 .chat_text {
   display: inline-block;
   text-align: left;
-  color: white;
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: $black;
+  background: #E4FFC9;
+  // background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   text-decoration: none;
-  padding: 0 20px;
-  border-radius: 20px;
-  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
   max-width: 80%;
 
   p {
     display: inline-block;
+    margin: 0;
   }
 
   i.em {
     height: 1.2em;
     width: 1.2em;
+  }
+}
+
+.chat_info {
+  text-align: center;  
+
+  p {
+    display: inline-block;
+    color: $purple;
+    background: white;
+    padding: 10px 30px;
+    margin: 20px 0 0 0;
+    border-radius: 100px;
+    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.05);
   }
 }
 
