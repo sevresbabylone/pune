@@ -1,51 +1,28 @@
 .story_header {
-  background: #f6f6f6 url(../images/halftone.png);
+  background: $black;
   padding: 2rem 0 4rem;
-}
-
-.story_profile {
-  position: relative;
   text-align: center;
-  padding-top: 18rem;
-
-  img {
-    position: absolute;
-    top: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    border: 5px solid white;
-    z-index: 1;
-    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);
-  }
-
-  .story_profile_text {
-    width: 90%;
-    color: $indigo;
-    background: white;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 5rem 2rem 3rem;
-    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.05);
-
-    @media (min-width: 768px) {
-      width: 70%;
-    }
-  }
 
   .button {
-    margin-top: 0;
+    margin-top: 4rem;
+  }
+}
+
+.story-profile-pic {
+  img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);    
   }
 }
 
 .story_convo {
-  background: $black;
+  background: $grey;
 }
 
 .snippet {
-  background: #f6f6f6 url(../images/halftone.png);
+  background: $grey url(../images/halftone.png);
   padding: 3rem 0;
 
   h2 {
@@ -57,7 +34,7 @@
     background: white;
     margin: 0 auto;
     padding: 2rem;
-    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 20px -5px rgba(50,50,93,.12), 0 3px 4px -2px rgba(0,0,0,.08);
 
     @media (min-width: 768px) {
       width: 65%;

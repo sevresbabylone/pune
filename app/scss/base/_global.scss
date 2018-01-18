@@ -7,24 +7,24 @@ html {
 }
 
 body {
-  font-size: 1.5em;
-  line-height: 1.6;
+  font-size: 1.8em;
+  line-height: calc(28/18);
   font-family: $sans1;
   font-weight: 400;
   color: $black; 
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
+  font-weight: 400;
   font-family: $sans2;
-  font-weight: 800;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 { font-size: 4.0rem; line-height: 1.20; }

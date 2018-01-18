@@ -4,10 +4,10 @@
   background: $indigo;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 25px;
   margin-top: 20px;
-  border-radius: 100px;
-  box-shadow: 0 10px 40px 0 rgba(0,0,0,.2);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.2);
   transition: box-shadow .35s ease;
 
   &:hover {
@@ -17,5 +17,42 @@
   &.button-invert {
     color: $indigo;
     background: white;
+  }
+
+  &.button-green {
+    color: white;
+    background: #3FC380;
+    // font-weight: bold;
+  }
+}
+
+.button-next {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  p {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: .2rem;    
+  }
+}
+
+.arrow-down {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: transparent url('../images/arrow-white.png') center no-repeat;
+    background-size: contain;
   }
 }
