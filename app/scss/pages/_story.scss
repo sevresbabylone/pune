@@ -1,7 +1,8 @@
 .story_header {
-  background: $black;
-  padding: 2rem 0 4rem;
+  padding: 5rem 0;
   text-align: center;
+  background: $black;
+  background-image: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
 
   .button {
     margin-top: 4rem;
@@ -10,35 +11,159 @@
 
 .story-profile-pic {
   img {
-    width: 150px;
+    width: 120px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);    
   }
 }
 
-.story_convo {
+.story_dialogue {
+  position: relative;
   background: $grey;
+  padding: 2.5rem 0 5rem;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(160, 160, 160, 0) 0%, rgba(160, 160, 160, 0) 40%, rgba(160, 160, 160, .5) 80%, rgba(160, 160, 160, 1) 100%);
+    opacity: .9;
+  }
 }
 
-.snippet {
-  background: $grey url(../images/halftone.png);
-  padding: 3rem 0;
+.story_quote {
+  position: relative;
+  min-height: 100vh;
 
-  h2 {
-    text-align: center;
+  &.story_quote_1 {
+    background: url('../images/story-quote-1.jpg') 20% center no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
   }
 
-  .snippet_container {
-    width: 90%;
-    background: white;
-    margin: 0 auto;
-    padding: 2rem;
-    box-shadow: 0 5px 20px -5px rgba(50,50,93,.12), 0 3px 4px -2px rgba(0,0,0,.08);
+  &.story_quote_2 {
+    background: url('../images/story-quote-2.jpg') 75% center no-repeat;
+    background-size: cover;  
+    background-attachment: fixed; 
+  }
+}
 
-    @media (min-width: 768px) {
-      width: 65%;
-      padding: 4rem; 
+.story_quote_container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px 20px;
+  background: white;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  font-family: $sans2;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -30px;
+    right: 60px;
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    width: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: 960px) {
+    bottom: auto;
+    right: 60px;
+    top: 45%;
+    transform: translateY(-50%);
+    max-width: 540px;
+    padding: 30px;
+    border-radius: 5px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: auto;
+      left: -20px;
+      top: 40px;
+      border-style: solid;
+      border-width: 15px 20px 15px 0;
+      border-color: transparent white;
+      width: 0;
+    }
+  }
+
+  &.quote-left {
+    @media (min-width: 960px) {
+      left: 60px;
+      right: auto;
     }
   }
 }
+
+.story_album {
+  position: relative;
+
+  .story_photo {
+    position: relative;
+    margin: 5rem 0;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+    }
+  }
+}
+
+.story_snippet {
+  color: white;
+  padding: 5rem 0;
+  background: $black;
+  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+
+  .container {
+    max-width: 520px;
+  }
+
+  img {
+    display: block;
+    margin: 2.5rem auto;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  }
+}
+
+// .snippet {
+//   background: $grey url(../images/halftone.png);
+//   padding: 3rem 0;
+
+//   h2 {
+//     text-align: center;
+//   }
+
+//   .snippet_container {
+//     width: 90%;
+//     background: white;
+//     margin: 0 auto;
+//     padding: 2rem;
+//     box-shadow: 0 5px 20px -5px rgba(50,50,93,.12), 0 3px 4px -2px rgba(0,0,0,.08);
+
+//     @media (min-width: 768px) {
+//       width: 65%;
+//       padding: 4rem; 
+//     }
+//   }
+// }
