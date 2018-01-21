@@ -51,9 +51,20 @@
     background-size: cover;  
     background-attachment: fixed; 
   }
+
+  &.story_quote_3 {
+    background: url('../images/story-quote-3.jpg') 30% center no-repeat;
+    background-size: cover;  
+    background-attachment: fixed; 
+  }
 }
 
 .story_quote_container {
+  p {
+    margin: 0;
+    font-weight: $xbold;
+  }
+
   position: absolute;
   bottom: 0;
   right: 0;
@@ -61,11 +72,24 @@
   padding: 30px 20px;
   background: white;
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-  font-family: $sans2;
   z-index: 1;
 
   &:before {
-    content: "";
+    content: '';
+    position: absolute;
+    top: -90px;
+    right: 45px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: white url('../images/profile.jpg') center no-repeat;
+    background-size: contain;
+  }
+
+  &:after {
+    content: '';
     position: absolute;
     display: block;
     top: -30px;
@@ -75,37 +99,69 @@
     width: 0;
   }
 
-  p {
-    margin: 0;
-  }
-
   @media (min-width: 960px) {
     bottom: auto;
     right: 60px;
     top: 45%;
     transform: translateY(-50%);
-    max-width: 540px;
+    max-width: 560px;
     padding: 30px;
     border-radius: 5px;
+    font-size: 2.2rem;
 
     &:before {
-      content: "";
+      content: '';
+      position: absolute;
+      top: auto;
+      bottom: -90px;
+      right: 30px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      border: 3px solid white;
+      border-radius: 50%;
+      background: white url('../images/profile.jpg') center no-repeat;
+      background-size: contain;
+    }
+
+    &:after {
+      content: '';
       position: absolute;
       display: block;
-      bottom: auto;
-      left: -20px;
-      top: 40px;
+      top: auto;
+      right: 40px;
+      bottom: -20px;
+      border-width: 20px 20px 0;
       border-style: solid;
-      border-width: 15px 20px 15px 0;
-      border-color: transparent white;
+      border-color: white transparent;
       width: 0;
     }
   }
 
   &.quote-left {
+    &:before {
+      left: 45px;
+      right: auto;
+    }
+
+    &:after {
+      left: 60px;
+      right: auto;
+    }
+
     @media (min-width: 960px) {
       left: 60px;
       right: auto;
+
+      &:before {
+        left: 30px;
+        right: auto;
+      }
+
+      &:after {
+        left: 40px;
+        right: auto;
+      }
     }
   }
 }
