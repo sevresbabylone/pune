@@ -10,7 +10,7 @@ body {
   font-size: 1.8em;
   line-height: calc(28/18);
   font-family: $sans1;
-  font-weight: 400;
+  font-weight: $norm;
   color: $black; 
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -20,8 +20,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 400;
   font-family: $sans2;
+  font-weight: $norm;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

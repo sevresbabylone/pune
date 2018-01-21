@@ -18,6 +18,7 @@
       $('.chat_text_first').addClass('animated fadeInLeft')
       var controller = new ScrollMagic.Controller()
       $(leftChatContainers).each(function (index, value) {
+        $(value).addClass('animated')
         new ScrollMagic.Scene({
           triggerElement: value,
           reverse: false
@@ -29,6 +30,7 @@
         .addTo(controller)
       })
       $('.c-right').each(function (index, value) {
+        $(value).addClass('animated')
         new ScrollMagic.Scene({
           triggerElement: value,
           reverse: false
@@ -40,6 +42,7 @@
         .addTo(controller)
       })
       $('.story_quote_container').each(function (index, value) {
+        $(value).addClass('animated')
         new ScrollMagic.Scene({
           triggerElement: value,
           reverse: false
@@ -51,7 +54,7 @@
         .addTo(controller)
       })
       $('.story_snippet h3, .story_snippet img, .story_snippet p').each(function (index, value) {
-        console.log(value)
+        $(value).addClass('animated')
         new ScrollMagic.Scene({
           triggerElement: value,
           reverse: false
@@ -63,6 +66,7 @@
         .addTo(controller)
       })
       $('.story_photo').each(function (index, value) {
+        $(value).addClass('animated')
         new ScrollMagic.Scene({
           triggerElement: value,
           reverse: false
