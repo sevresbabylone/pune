@@ -9,7 +9,7 @@ $('.container-inner').each(function(){
   var ourScene = new ScrollMagic.Scene({
     triggerElement: this,
     triggerHook: 0.9,
-    reverse: false,
+    reverse: false
   })
   .setClassToggle(this, 'is-active') // add transition class
   .addIndicators({

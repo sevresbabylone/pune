@@ -1,12 +1,18 @@
 .story_header {
+  height: 100vh; // will be swapped out on click
   padding: 5rem 0;
   text-align: center;
   background: $black;
   background-image: linear-gradient(90deg, #6A11CB 0%, #2575FC 100%);
-
+  transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   .button {
     margin-top: 4rem;
   }
+}
+.story_header.auto-height {
+  height: 450px;
 }
 
 .story-profile-pic {
@@ -14,11 +20,12 @@
     width: 120px;
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);    
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.15);
   }
 }
 
 .story_dialogue {
+  display: none; // remove after on click
   position: relative;
   background: $grey;
   padding: 2.5rem 0 5rem;
@@ -37,23 +44,25 @@
 }
 
 .story_quote {
+  display: none; // remove after on CLick
   position: relative;
   min-height: 100vh;
 
   &.story_quote_1 {
     background: url('../images/story-quote-1.jpg') 20% center no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
   }
 
   &.story_quote_2 {
     background: url('../images/story-quote-2.jpg') 75% center no-repeat;
-    background-size: cover;  
-    background-attachment: fixed; 
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
 .story_quote_container {
+  opacity: 0;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -111,10 +120,12 @@
 }
 
 .story_album {
+  display: none; // remove after onClick
   position: relative;
   padding: 5rem 0;
 
   .story_photo {
+    opacity: 0; // fade in onScroll
     position: relative;
     text-align: center;
 
@@ -127,6 +138,7 @@
 }
 
 .story_snippet {
+  display: none; // remove after onClick
   color: white;
   padding: 5rem 0;
   background: $black;
@@ -137,12 +149,19 @@
   }
 
   img {
+    opacity: 0; // fade in onScroll
     display: block;
     margin: 2.5rem auto;
     width: 100%;
     max-width: 900px;
     height: auto;
     box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  }
+  h3 {
+    opacity: 0; // fade in onScroll
+  }
+  p {
+    opacity: 0;
   }
 }
 
@@ -177,7 +196,7 @@
 
 //     @media (min-width: 768px) {
 //       width: 65%;
-//       padding: 4rem; 
+//       padding: 4rem;
 //     }
 //   }
 // }
